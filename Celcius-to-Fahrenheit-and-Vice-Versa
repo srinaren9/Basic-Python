@@ -1,0 +1,9 @@
+#Program to convert fahrenheit temperature to celsius temperature and vice versa
+
+c=float(input("Enter temperature in celsius= "))
+f=c*(9/5)+32
+print("Temp in Fahrenheit = ",f)
+
+fa=float(input("Enter temperature in Fahrenheit= "))
+ce= (fa-32)*(5/9)
+print("Temp in celsius = ",ce)
