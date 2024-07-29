@@ -1,0 +1,20 @@
+#Program to print a bill for a single product along with the given input price
+#gstrate (cgst,sgst both)
+
+def line():
+    print("---------------------------------------------------------------------------")
+name=input("Please enter the name of the product")
+price=int(input("Please enter the price of the product: "))
+gstrate=int(input("Please enter the gstrate of the product: "))
+cgst=((gstrate/2)/100)*price
+sgst=cgst
+final=price+cgst+sgst
+
+line()
+print("XYZ Shop")
+print("Name of Product: ",name)
+print("Price of the Product: ",price)
+print("CGST of the product ",gstrate/2,"%:",cgst)
+print("SGST of the product: ",gstrate/2,"%:",sgst)
+line()
+print("Final price of the product: ",final)
