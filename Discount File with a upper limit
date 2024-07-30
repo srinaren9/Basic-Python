@@ -1,0 +1,21 @@
+
+def line():
+    print("-----------------------------------------------------------")
+
+item=input("Please enter the price of the product:")
+price=int(input("Please enter the price of the product: "))
+disc=int(input("Please enter the discount % of the product: "))
+
+if disc>5:
+    print("Discount too high cant happen!")
+    
+else:
+    amt=(disc/100)*price
+    fmt=price-disc
+    line()
+    print("XYZ Shop")
+    print("Name of the item: ",item)
+    print("Price of the item: ",price)
+    print("Discount to be given: ",disc,"%")
+    print("Discount amount to be given: ",amt)
+    print("Final net payable amount: ",fmt)
