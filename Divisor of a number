@@ -1,0 +1,11 @@
+#Finding the divisors of a number given by the user
+
+def line():
+    print("-----------------------------------------")
+    
+num=int(input("Please enter the number: "))
+
+print("Divisiors of number ",num,"are: ")
+for a in range(1,num+1):
+    if num%a==0:
+        print(a)
