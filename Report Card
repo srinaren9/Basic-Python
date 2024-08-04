@@ -1,0 +1,38 @@
+#Report Card for grade XII CBSE student (MPC) with their Maths Chemistry Phsyics Marks included
+def line():
+    print("--------------------------------")
+m=p=c=total=avg=0
+name=input("Please enter your name: ")
+m=int(input("Please enter your maths mark: "))
+p=int(input("Please enter your physics mark: "))
+c=int(input("Please enter your chemistry mark: "))
+total=m+p+c
+avg=total/3
+
+if (m>100) or (p>100) or (c>100):
+    print("Error! Not Possible.")
+elif (m<0) or (p<0) or (c<0):
+    print("Error! Not Possible.")
+else:
+    if avg>=90:
+        result='Distinction Level'
+    elif avg>=80:
+        result='First Class'
+    elif avg>=60:
+        result='Second Class'
+    elif avg>=50:
+        result='Third Class'
+    elif avg>=33:
+        result='Pass'
+    else:
+        result='Fail'
+    line()
+    print("Candidates Name: ",name)
+    print("Marks scored in Maths: ",m)
+    print("Marks scored in Physics: ",p)
+    print("Marks scored in Chemistry: ",c)
+    line()
+    print("Total Marks scored: ",total,"/500")
+    print("Percentage scored: ",avg,"%")
+    line()
+    print("Thank you!")
