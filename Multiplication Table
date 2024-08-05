@@ -1,0 +1,12 @@
+#Multiplication Table
+#Multiples of a number with both the number and the number of multiples required from the user
+num=int(input("Please enter the number: "))
+a=int(input("Please enter how many multiples do you want: "))
+sum=0
+for a in range(1,a+1):
+    k=num*a
+    print(num,"X",a,"=",k)
+    sum+=k
+
+print("Sum of the first",a,"multiples of",num,"is",sum)
+print("Thank You")
