@@ -1,0 +1,28 @@
+#BMI Calculator using Imperial Scale with user inputed values
+def line():
+    print("-------------------------------------------------")
+    
+import math
+w=float(input("Please enter your weight in Pounds: "))
+h=float(input("Please enter your height in inches: "))
+bmi=(w*703)/math.pow(h,2)
+
+line()
+print("Your BMI is: ")
+if bmi>40:
+    print("Obese Class III")
+elif bmi>35:
+    print("Obese Class II")
+elif bmi>30:
+    print("Obese Class I")
+elif bmi>25:
+    print("Overweight")
+elif bmi>18.5:
+    print("Normal")
+elif bmi>17:
+    print("Mild Thinness")
+elif bmi>16:
+    print("Moderate Thinness")
+else:
+    print("Severe Thinness")
+line()
