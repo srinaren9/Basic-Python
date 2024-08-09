@@ -1,0 +1,16 @@
+#Printing n numbers of fibonacii series numbers buy taking input from user
+#Using for loop
+num=int(input("Please enter how many numbers you want: "))
+eh=0
+fn=1
+sn=1
+count=0
+print(eh, end=' ')
+print(fn, end=' ')
+print(sn, end=' ')
+for a in range(1,num-2):
+    nn=fn+sn
+    print(nn,end=' ')
+    fn=sn
+    sn=nn
+    a+=1
