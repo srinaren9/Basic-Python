@@ -1,0 +1,14 @@
+#Sum and count of even numbers present in the range
+
+a=int(input("Enter the starting number: "))
+b=int(input("Enter the ending numner: "))
+
+sum=count=0
+for k in range(a,b+1):
+    if k%2==0:
+        print(k,end=' ')
+        sum+=k
+        count+=1
+
+print("Number of even numbers in the range is: ",count)
+print("Sum of all even numbers in the range is: ",sum)
