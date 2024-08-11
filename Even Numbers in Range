@@ -10,5 +10,6 @@ for k in range(a,b+1):
         sum+=k
         count+=1
 
+print()
 print("Number of even numbers in the range is: ",count)
 print("Sum of all even numbers in the range is: ",sum)
